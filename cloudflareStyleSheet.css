@@ -1,0 +1,251 @@
+div.notion-topbar > div > div:nth-child(3) {
+  display: none !important;
+}
+div.notion-topbar > div > div:nth-child(4) {
+  display: none !important;
+}
+div.notion-topbar > div > div:nth-child(5) {
+  display: none !important;
+}
+div.notion-topbar > div > div:nth-child(6) {
+  display: none !important;
+}
+div.notion-topbar-mobile > div:nth-child(3) {
+  display: none !important;
+}
+div.notion-topbar-mobile > div:nth-child(4) {
+  display: none !important;
+}
+div.notion-topbar > div > div:nth-child(1n).toggle-mode {
+  display: block !important;
+}
+div.notion-topbar-mobile > div:nth-child(1n).toggle-mode {
+  display: block !important;
+}
+
+.notion-frame {
+  background-image: radial-gradient(
+      circle at 13% 47%,
+      rgba(140, 140, 140, 0.03) 0%,
+      rgba(140, 140, 140, 0.03) 25%,
+      transparent 25%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 28% 63%,
+      rgba(143, 143, 143, 0.03) 0%,
+      rgba(143, 143, 143, 0.03) 16%,
+      transparent 16%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 81% 56%,
+      rgba(65, 65, 65, 0.03) 0%,
+      rgba(65, 65, 65, 0.03) 12%,
+      transparent 12%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 26% 48%,
+      rgba(60, 60, 60, 0.03) 0%,
+      rgba(60, 60, 60, 0.03) 6%,
+      transparent 6%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 97% 17%,
+      rgba(150, 150, 150, 0.03) 0%,
+      rgba(150, 150, 150, 0.03) 56%,
+      transparent 56%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(25, 25, 25, 0.03) 0%,
+      rgba(25, 25, 25, 0.03) 36%,
+      transparent 36%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 55% 52%,
+      rgba(69, 69, 69, 0.03) 0%,
+      rgba(69, 69, 69, 0.03) 6%,
+      transparent 6%,
+      transparent 100%
+    ),
+    linear-gradient(180deg,#fdfbfb 0,#ebedee 100%) !important;
+}
+
+div.notion-page-block {
+  position: relative;
+}
+div.notion-page-details-controls {
+  display: none;
+}
+div.notion-page-content {
+  padding-bottom: 2.5rem !important;
+  padding-top: 2.5rem !important;
+  background: #fff;
+  border-radius: 1rem;
+  margin: -2.75rem 0 10vh 0;
+  box-shadow: 4px 4px rgba(0,0,0,0.1);
+  flex-grow: 0 !important;
+}
+div.notion-record-icon > div > div > img {
+  height: 100% !important;
+}
+
+div.notion-callout-block > div > div {
+    border-radius: 0.5rem !important;
+}
+
+.notion-peek-renderer {
+    background: rgba(8, 28, 48, 0.9) !important;
+    transition: all 0.3s;
+}
+
+.notion-peek-renderer > div:nth-child(2) {
+    border-radius: 0.5rem !important;
+    overflow: hidden;
+    max-width: 1200px !important;
+    top: 35px !important;
+    height: calc(100% - 70px) !important;
+}
+
+.notion-peek-renderer > div:nth-child(2) > div:nth-child(1) {
+    display: none;
+}
+
+.notion-peek-renderer .notion-page-content {
+    margin: 0 !important;
+}
+
+.notion-collection_view-block > div:first-child {
+    min-height: 12px !important;
+}
+
+.notion-collection_view-block > div:first-child > div {
+    display: none !important;
+}
+
+.notion-scroller > div:first-child > div:first-child {
+    position: relative !important;
+    margin-top: 20px;
+}
+
+.notion-scroller > div:first-child:not(.notion-list-view) .notion-record-icon {
+    margin-top: 7px !important;
+    left: -70px;
+    position: absolute !important;
+    width: 140px !important;
+    height: 140px !important;
+}
+
+.notion-peek-renderer .notion-scroller > div:first-child .notion-record-icon {
+    margin-top: 7px !important;
+    left: -0px;
+    position: absolute !important;
+    width: 140px !important;
+    height: 140px !important;
+}
+
+
+/* Peace eyes emoji */
+@media only screen and (min-width: 50em) {
+  [data-block-id="5e31f36b-cbaa-41d4-b086-01731b0fb722"] {
+    display: block;
+    text-align: right;
+    margin-top: -5.825rem !important;
+    font-size: 2.3rem;
+  }
+}
+
+
+
+/* Founder & CEO... */
+[data-block-id="433914b8-fa5a-4b87-94e5-3d0e59c82a3a"] {
+    font-size: .875rem;
+    margin-top: -2rem !important;
+}
+
+/* Founder & CEO... Canopy study img */
+[data-block-id="433914b8-fa5a-4b87-94e5-3d0e59c82a3a"] img:first-child {
+    background: none !important;
+    content: url("https://www.canopystudy.com/_nuxt/img/canopy-logo-small-dark.df4fd55.png") !important;
+}
+
+/* Register here to get ... */
+[data-block-id="9213f583-c7a6-415d-bc76-17779d2c7b74"],
+/* Made with Notion... */
+[data-block-id="4282c896-b694-400a-8295-5177112d2b67"] {
+    text-align: center;
+    font-size: .875rem;
+}
+
+/* Register here to get ... remove emoji*/
+[data-block-id="9213f583-c7a6-415d-bc76-17779d2c7b74"] > div > div > div:first-child {
+    display: none;
+}
+
+/* Thanks for coming */
+[data-block-id="d7775caa-37ee-4cf4-b3b4-561ce432664e"] {
+    text-align: center;
+    margin-bottom: -5.4rem!important
+}
+
+/* Thanks for coming */
+[data-block-id="b2c92fa8-2ab2-4b0c-a464-9feb6fa1435c"] {
+    text-align: right;
+}
+
+/* 2020 image */
+[data-block-id="094952d8-7128-4f2a-a7a8-75cff446b707"] img {
+    border-radius: 0.5rem !important;
+}
+
+/* Contact form */
+.hide-overflow {
+    overflow-y: hidden;
+}
+
+.notion-selectable-halo {
+    display: none;
+}
+
+
+/* Thanks for coming EMOJI */ 
+[data-block-id="d7775caa-37ee-4cf4-b3b4-561ce432664e"] > div > div > img,
+/* Find me on these platforms EMOJI */ 
+[data-block-id="a3e46af5-0ef6-4c42-8b66-86ace2c4ba1e"] > div > div > div > img {
+    animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%; 
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
