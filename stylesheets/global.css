@@ -1,0 +1,183 @@
+/* 
+*  GLOBAL.CSS TABLE OF CONTENTS
+*   
+*  1.0 - Top bar
+*  2.0 - Regular Notion blocks
+*  3.0 - Modals
+*/
+
+/*** 1.0 - Top bar ***/
+
+/* Remove top bar */
+div.notion-topbar > div > div:nth-child(3) {
+  display: none !important;
+}
+div.notion-topbar > div > div:nth-child(4) {
+  display: none !important;
+}
+div.notion-topbar > div > div:nth-child(5) {
+  display: none !important;
+}
+div.notion-topbar > div > div:nth-child(6) {
+  display: none !important;
+}
+div.notion-topbar-mobile > div:nth-child(3) {
+  display: none !important;
+}
+div.notion-topbar-mobile > div:nth-child(4) {
+  display: none !important;
+}
+div.notion-topbar > div > div:nth-child(1n).toggle-mode {
+  display: block !important;
+}
+div.notion-topbar-mobile > div:nth-child(1n).toggle-mode {
+  display: block !important;
+}
+
+/*** 2.0 - Regular Notion blocks ***/
+
+/* Background */
+.notion-frame {
+  background-image: radial-gradient(
+      circle at 13% 47%,
+      rgba(140, 140, 140, 0.03) 0%,
+      rgba(140, 140, 140, 0.03) 25%,
+      transparent 25%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 28% 63%,
+      rgba(143, 143, 143, 0.03) 0%,
+      rgba(143, 143, 143, 0.03) 16%,
+      transparent 16%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 81% 56%,
+      rgba(65, 65, 65, 0.03) 0%,
+      rgba(65, 65, 65, 0.03) 12%,
+      transparent 12%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 26% 48%,
+      rgba(60, 60, 60, 0.03) 0%,
+      rgba(60, 60, 60, 0.03) 6%,
+      transparent 6%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 97% 17%,
+      rgba(150, 150, 150, 0.03) 0%,
+      rgba(150, 150, 150, 0.03) 56%,
+      transparent 56%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(25, 25, 25, 0.03) 0%,
+      rgba(25, 25, 25, 0.03) 36%,
+      transparent 36%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 55% 52%,
+      rgba(69, 69, 69, 0.03) 0%,
+      rgba(69, 69, 69, 0.03) 6%,
+      transparent 6%,
+      transparent 100%
+    ),
+    linear-gradient(180deg, #fdfbfb 0, #ebedee 100%) !important;
+}
+
+/* ! Could be removed */
+/* Helps position page blocks */
+.notion-page-block {
+  position: relative;
+}
+
+/* Remove page controls */
+.notion-page-details-controls {
+  display: none;
+}
+
+/* The body of the whole page */
+.notion-page-content {
+  padding-bottom: 2.5rem !important;
+  padding-top: 2.5rem !important;
+  background: #fff;
+  border-radius: 1rem;
+  margin: -2.75rem 0 10vh 0;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
+  flex-grow: 0 !important;
+}
+
+/* Use full height for page icons */
+.notion-record-icon > div > div > img {
+  height: 100% !important;
+}
+
+/* All callouts are rounded */
+.notion-callout-block > div > div {
+  border-radius: 0.5rem !important;
+}
+
+/* Remove unnecessary components of collection block */
+.notion-collection_view-block > div:first-child > div {
+  display: none !important;
+}
+
+/* Page icon positioning */
+.notion-scroller > div:first-child:not(.notion-list-view) .notion-record-icon {
+  margin-top: 7px !important;
+  left: -70px;
+  position: absolute !important;
+  width: 140px !important;
+  height: 140px !important;
+}
+
+/* Apply rounding to all image blocks */
+.notion-image-block img {
+  border-radius: 0.5rem !important;
+}
+
+/* Remove ability to select blocks */
+.notion-selectable-halo {
+  display: none;
+}
+
+/*** 3.0 - Modals ***/
+
+/* Popup page container (an page in a list) */
+.notion-peek-renderer {
+  background: rgba(8, 28, 48, 0.9) !important;
+  transition: all 0.3s;
+}
+
+/* Popup page body */
+.notion-peek-renderer > div:nth-child(2) {
+  border-radius: 0.5rem !important;
+  overflow: hidden;
+  max-width: 1200px !important;
+  top: 35px !important;
+  height: calc(100% - 70px) !important;
+}
+
+/* Remove popup top controls */
+.notion-peek-renderer > div:nth-child(2) > div:nth-child(1) {
+  display: none;
+}
+
+/* Remove margin from regular page content */
+.notion-peek-renderer .notion-page-content {
+  margin: 0 !important;
+}
+
+/* Position icon correctly in modal */
+.notion-peek-renderer .notion-scroller > div:first-child .notion-record-icon {
+  left: -0px;
+}
+
+/* 
+**********************************************************************
+*/
