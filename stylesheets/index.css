@@ -8,55 +8,10 @@
     z-index: 9999;
   }
 
-  /* Remove border from a tag on image */
-  [data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] a span {
-    border: none !important;
-  }
-
-  /* Change images to correct logos */
-  [data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] a:nth-child(1) img {
-    background: none !important;
-    content: url("https://s3-ap-southeast-2.amazonaws.com/canopystudy.com/img/links/instagram-logo.png") !important;
-  }
-
-  [data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] a:nth-child(2) img {
-    background: none !important;
-    content: url("https://s3-ap-southeast-2.amazonaws.com/canopystudy.com/img/links/facebook-logo.png") !important;
-  }
-
-  /*
-    Hero text
-  */
-
-  /* Here there, we're the... */
-  [data-block-id="768c496a-76c3-4173-b9c5-5d1fe136a8ba"] {
-    text-align: center;
-  }
-
-  /* Divider in the middle */
+  /* Divider in the middle of hero text */
   [data-block-id="8f67bfcf-7266-45ed-accb-d95e8833299b"] > div {
     width: 77% !important;
     margin: auto !important;
-  }
-
-  /* We're addicted to creating amazing... */
-  [data-block-id="d042e21a-0200-4ad1-a1a6-564ee057df87"] {
-    text-align: center;
-    margin-top: 0 !important;
-    font-size: 1.3rem;
-  }
-
-  /* Update plan my study logo */
-  [data-block-id="d042e21a-0200-4ad1-a1a6-564ee057df87"] img:first-child,
-  [data-block-id="90d7549a-c61b-4dac-8bd9-040b091220e9"] img:first-child {
-    background: none !important;
-    content: url("https://canopystaticmedia.s3-ap-southeast-2.amazonaws.com/static/branding/plan-my-study-app-icon-rounded.png") !important;
-  }
-
-  /* Change the branding color on the a tag */
-  [data-block-id="d042e21a-0200-4ad1-a1a6-564ee057df87"] a,
-  [data-block-id="90d7549a-c61b-4dac-8bd9-040b091220e9"] a {
-    color: rgb(25, 118, 210) !important;
   }
 
   /*
@@ -73,4 +28,49 @@
     bottom: 40px;
     padding-right: 50px;
   }
+}
+
+/* Remove border from a tag on instagram/facebook logo image */
+[data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] a span {
+  border: none !important;
+}
+
+/* Change images to correct logos */
+[data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] a:nth-child(1) img {
+  background: none !important;
+  content: url("https://s3-ap-southeast-2.amazonaws.com/canopystudy.com/img/links/instagram-logo.png") !important;
+}
+
+[data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] a:nth-child(2) img {
+  background: none !important;
+  content: url("https://s3-ap-southeast-2.amazonaws.com/canopystudy.com/img/links/facebook-logo.png") !important;
+}
+
+/*
+  Hero text
+*/
+
+/* Here there, we're the... */
+[data-block-id="768c496a-76c3-4173-b9c5-5d1fe136a8ba"] {
+  text-align: center;
+}
+
+/* We're addicted to creating amazing... */
+[data-block-id="d042e21a-0200-4ad1-a1a6-564ee057df87"] {
+  text-align: center;
+  margin-top: 0 !important;
+  font-size: 1.3rem;
+}
+
+/* Update plan my study logo */
+[data-block-id="d042e21a-0200-4ad1-a1a6-564ee057df87"] img:first-child,
+[data-block-id="90d7549a-c61b-4dac-8bd9-040b091220e9"] img:first-child {
+  background: none !important;
+  content: url("https://canopystaticmedia.s3-ap-southeast-2.amazonaws.com/static/branding/plan-my-study-app-icon-rounded.png") !important;
+}
+
+/* Change the branding color on the a tag */
+[data-block-id="d042e21a-0200-4ad1-a1a6-564ee057df87"] a,
+[data-block-id="90d7549a-c61b-4dac-8bd9-040b091220e9"] a {
+  color: rgb(25, 118, 210) !important;
 }

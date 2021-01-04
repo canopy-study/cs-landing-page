@@ -105,13 +105,31 @@ div.notion-topbar-mobile > div:nth-child(1n).toggle-mode {
 /* The body of the whole page */
 .notion-page-content {
   padding-bottom: 2.5rem !important;
-  padding-top: 2.5rem !important;
-  background: #fff;
-  border-radius: 1rem;
-  margin: -2.75rem 0 10vh 0;
-  box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
-  flex-grow: 0 !important;
-  position: relative;
+}
+
+@media only screen and (min-width: 50em) {
+  /* The body of the whole page */
+  .notion-page-content {
+    padding-bottom: 2.5rem !important;
+    padding-top: 2.5rem !important;
+    background: #fff;
+    border-radius: 1rem;
+    margin: -2.75rem 0 10vh 0;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
+    flex-grow: 0 !important;
+    position: relative;
+  }
+
+  /* Page icon positioning */
+  .notion-scroller
+    > div:first-child:not(.notion-list-view)
+    .notion-record-icon {
+    margin-top: 7px !important;
+    left: -70px;
+    position: absolute !important;
+    width: 140px !important;
+    height: 140px !important;
+  }
 }
 
 /* Use full height for page icons */
@@ -127,15 +145,6 @@ div.notion-topbar-mobile > div:nth-child(1n).toggle-mode {
 /* Remove unnecessary components of collection block */
 .notion-collection_view-block > div:first-child > div {
   display: none !important;
-}
-
-/* Page icon positioning */
-.notion-scroller > div:first-child:not(.notion-list-view) .notion-record-icon {
-  margin-top: 7px !important;
-  left: -70px;
-  position: absolute !important;
-  width: 140px !important;
-  height: 140px !important;
 }
 
 /* Apply rounding to all image blocks */

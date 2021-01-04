@@ -1,6 +1,9 @@
 /* CONFIG STARTS HERE */
 
-const MY_DOMAIN = "canopystudy-beta.com";
+const STAGING_DOMAIN = "canopystudy-beta.com";
+const PRODUCTION_DOMAIN = "canopystudy.com";
+const MY_DOMAIN =
+  EV_ENVIRONMENT == "STAGING" ? STAGING_DOMAIN : PRODUCTION_DOMAIN;
 
 const SLUG_TO_PAGE = {
   "": "a4731a8eafd1491b9b40dfe3234406d1",
