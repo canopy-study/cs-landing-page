@@ -1,89 +1,76 @@
-.notion-scroller > div:first-child > div:first-child {
-  position: relative !important;
-  margin-top: 20px;
-}
-
-/* Position first block in top right of body */
 @media only screen and (min-width: 50em) {
-  [data-block-id="5e31f36b-cbaa-41d4-b086-01731b0fb722"] {
+  /* Position first block in top right of body */
+  [data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] {
     text-align: right;
-    margin-top: -5.825rem !important;
-    font-size: 2.3rem;
+    margin-top: -4.6rem !important;
+    margin-right: -8rem;
+    font-size: 2rem;
+    z-index: 9999;
   }
-}
 
-/* Founder & CEO... */
-[data-block-id="433914b8-fa5a-4b87-94e5-3d0e59c82a3a"] {
-  font-size: 0.875rem;
-  margin-top: -2rem !important;
-}
-
-/* Founder & CEO... Canopy study img */
-[data-block-id="433914b8-fa5a-4b87-94e5-3d0e59c82a3a"] img:first-child {
-  background: none !important;
-  content: url("https://www.canopystudy.com/_nuxt/img/canopy-logo-small-dark.df4fd55.png") !important;
-}
-
-/* Register here to get ... */
-[data-block-id="9213f583-c7a6-415d-bc76-17779d2c7b74"],
-/* Made with Notion... */
-[data-block-id="4282c896-b694-400a-8295-5177112d2b67"] {
-  text-align: center;
-  font-size: 0.875rem;
-}
-
-/* Register here to get ... remove emoji*/
-[data-block-id="9213f583-c7a6-415d-bc76-17779d2c7b74"]
-  > div
-  > div
-  > div:first-child {
-  display: none;
-}
-
-/* Thanks for coming */
-[data-block-id="d7775caa-37ee-4cf4-b3b4-561ce432664e"] {
-  text-align: center;
-  margin-bottom: -5.4rem !important;
-}
-
-/* Thanks for coming */
-[data-block-id="b2c92fa8-2ab2-4b0c-a464-9feb6fa1435c"] {
-  text-align: right;
-}
-
-/* Thanks for coming EMOJI */
-[data-block-id="d7775caa-37ee-4cf4-b3b4-561ce432664e"] > div > div > img,
-/* Find me on these platforms EMOJI */ 
-[data-block-id="a3e46af5-0ef6-4c42-8b66-86ace2c4ba1e"] > div > div > div > img {
-  animation-name: wave-animation;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-}
-
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
+  /* Remove border from a tag on image */
+  [data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] a span {
+    border: none !important;
   }
-  10% {
-    transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-    transform: rotate(-8deg);
+
+  /* Change images to correct logos */
+  [data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] a:nth-child(1) img {
+    background: none !important;
+    content: url("https://s3-ap-southeast-2.amazonaws.com/canopystudy.com/img/links/instagram-logo.png") !important;
   }
-  30% {
-    transform: rotate(14deg);
+
+  [data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] a:nth-child(2) img {
+    background: none !important;
+    content: url("https://s3-ap-southeast-2.amazonaws.com/canopystudy.com/img/links/facebook-logo.png") !important;
   }
-  40% {
-    transform: rotate(-4deg);
+
+  /*
+    Hero text
+  */
+
+  /* Here there, we're the... */
+  [data-block-id="768c496a-76c3-4173-b9c5-5d1fe136a8ba"] {
+    text-align: center;
   }
-  50% {
-    transform: rotate(10deg);
+
+  /* Divider in the middle */
+  [data-block-id="8f67bfcf-7266-45ed-accb-d95e8833299b"] > div {
+    width: 77% !important;
+    margin: auto !important;
   }
-  60% {
-    transform: rotate(0deg);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
+
+  /* We're addicted to creating amazing... */
+  [data-block-id="d042e21a-0200-4ad1-a1a6-564ee057df87"] {
+    text-align: center;
+    margin-top: 0 !important;
+    font-size: 1.3rem;
+  }
+
+  /* Update plan my study logo */
+  [data-block-id="d042e21a-0200-4ad1-a1a6-564ee057df87"] img:first-child,
+  [data-block-id="90d7549a-c61b-4dac-8bd9-040b091220e9"] img:first-child {
+    background: none !important;
+    content: url("https://canopystaticmedia.s3-ap-southeast-2.amazonaws.com/static/branding/plan-my-study-app-icon-rounded.png") !important;
+  }
+
+  /* Change the branding color on the a tag */
+  [data-block-id="d042e21a-0200-4ad1-a1a6-564ee057df87"] a,
+  [data-block-id="90d7549a-c61b-4dac-8bd9-040b091220e9"] a {
+    color: rgb(25, 118, 210) !important;
+  }
+
+  /*
+   Footer
+  */
+
+  /* 2020 Canopy Study Pty Ltd */
+  [data-block-id="b1ad2713-6d21-486f-85bc-2754adc23385"] {
+    text-align: right;
+    font-size: 0.875rem;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    padding-right: 50px;
   }
 }

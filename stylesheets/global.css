@@ -4,6 +4,7 @@
 *  1.0 - Top bar
 *  2.0 - Regular Notion blocks
 *  3.0 - Modals
+*  4.0 - Header
 */
 
 /*** 1.0 - Top bar ***/
@@ -40,54 +41,54 @@ div.notion-topbar-mobile > div:nth-child(1n).toggle-mode {
 .notion-frame {
   background-image: radial-gradient(
       circle at 13% 47%,
-      rgba(140, 140, 140, 0.03) 0%,
-      rgba(140, 140, 140, 0.03) 25%,
+      rgba(33, 150, 243, 0.03137254901960784) 0%,
+      rgba(33, 150, 243, 0.03137254901960784) 25%,
       transparent 25%,
       transparent 100%
     ),
     radial-gradient(
       circle at 28% 63%,
-      rgba(143, 143, 143, 0.03) 0%,
-      rgba(143, 143, 143, 0.03) 16%,
+      rgba(33, 150, 243, 0.03137254901960784) 0%,
+      rgba(33, 150, 243, 0.03137254901960784) 16%,
       transparent 16%,
       transparent 100%
     ),
     radial-gradient(
       circle at 81% 56%,
-      rgba(65, 65, 65, 0.03) 0%,
-      rgba(65, 65, 65, 0.03) 12%,
+      rgba(33, 150, 243, 0.03137254901960784) 0%,
+      rgba(33, 150, 243, 0.03137254901960784) 12%,
       transparent 12%,
       transparent 100%
     ),
     radial-gradient(
       circle at 26% 48%,
-      rgba(60, 60, 60, 0.03) 0%,
-      rgba(60, 60, 60, 0.03) 6%,
+      rgba(25, 118, 210, 0.03137254901960784) 0%,
+      rgba(25, 118, 210, 0.03137254901960784) 6%,
       transparent 6%,
       transparent 100%
     ),
     radial-gradient(
       circle at 97% 17%,
-      rgba(150, 150, 150, 0.03) 0%,
-      rgba(150, 150, 150, 0.03) 56%,
+      rgba(25, 118, 210, 0.03137254901960784) 0%,
+      rgba(25, 118, 210, 0.03137254901960784) 56%,
       transparent 56%,
       transparent 100%
     ),
     radial-gradient(
       circle at 50% 100%,
-      rgba(25, 25, 25, 0.03) 0%,
-      rgba(25, 25, 25, 0.03) 36%,
+      rgba(25, 118, 210, 0.03137254901960784) 0%,
+      rgba(25, 118, 210, 0.03137254901960784) 36%,
       transparent 36%,
       transparent 100%
     ),
     radial-gradient(
       circle at 55% 52%,
-      rgba(69, 69, 69, 0.03) 0%,
-      rgba(69, 69, 69, 0.03) 6%,
+      rgba(25, 118, 210, 0.03137254901960784) 0%,
+      rgba(25, 118, 210, 0.03137254901960784) 6%,
       transparent 6%,
       transparent 100%
     ),
-    linear-gradient(180deg, #fdfbfb 0, #ebedee 100%) !important;
+    linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255)) !important;
 }
 
 /* ! Could be removed */
@@ -110,6 +111,7 @@ div.notion-topbar-mobile > div:nth-child(1n).toggle-mode {
   margin: -2.75rem 0 10vh 0;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
   flex-grow: 0 !important;
+  position: relative;
 }
 
 /* Use full height for page icons */
@@ -176,6 +178,22 @@ div.notion-topbar-mobile > div:nth-child(1n).toggle-mode {
 /* Position icon correctly in modal */
 .notion-peek-renderer .notion-scroller > div:first-child .notion-record-icon {
   left: -0px;
+}
+
+/*** 4.0 - Header ***/
+
+/* Decrease the margin from the top of the page */
+.notion-scroller > div:first-child > div:first-child {
+  position: relative !important;
+  margin-top: 20px;
+}
+
+/* Bring page title to front */
+div.notion-scroller
+  > div:nth-child(1)
+  > div
+  > div.notion-selectable.notion-page-block {
+  z-index: 10;
 }
 
 /* 
