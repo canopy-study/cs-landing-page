@@ -1,48 +1,23 @@
-@media only screen and (min-width: 50em) {
-  /* Position first block in top right of body */
-  [data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] {
-    text-align: right;
-    margin-top: -4.6rem !important;
-    margin-right: -8rem;
-    font-size: 2rem;
-    z-index: 9999;
-  }
-
-  /* Divider in the middle of hero text */
-  [data-block-id="8f67bfcf-7266-45ed-accb-d95e8833299b"] > div {
-    width: 77% !important;
-    margin: auto !important;
-  }
-
-  /*
-   Footer
-  */
-
-  /* 2020 Canopy Study Pty Ltd */
-  [data-block-id="b1ad2713-6d21-486f-85bc-2754adc23385"] {
-    text-align: right;
-    font-size: 0.875rem;
-    opacity: 0.5;
-    position: absolute;
-    right: 0;
-    bottom: 40px;
-    padding-right: 50px;
-  }
-}
-
 /* Remove border from a tag on instagram/facebook logo image */
 [data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] a span {
   border: none !important;
 }
 
-/* Change images to correct logos */
-[data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] a:nth-child(1) img {
-  background: none !important;
+/* Change social images to correct logos */
+[data-block-id="59106652-c74c-4571-8cce-e93d3716170b"]
+  a:nth-child(1)
+  > span
+  > span {
+  height: 40px;
   content: url("https://s3-ap-southeast-2.amazonaws.com/canopystudy.com/img/links/instagram-logo.png") !important;
 }
 
-[data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] a:nth-child(2) img {
-  background: none !important;
+[data-block-id="59106652-c74c-4571-8cce-e93d3716170b"]
+  a:nth-child(2)
+  > span
+  > span {
+  height: 40px;
+  margin-left: 5px;
   content: url("https://s3-ap-southeast-2.amazonaws.com/canopystudy.com/img/links/facebook-logo.png") !important;
 }
 
@@ -59,7 +34,7 @@
 [data-block-id="d042e21a-0200-4ad1-a1a6-564ee057df87"] {
   text-align: center;
   margin-top: 0 !important;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 /* Update plan my study logo */
@@ -69,8 +44,75 @@
   content: url("https://canopystaticmedia.s3-ap-southeast-2.amazonaws.com/static/branding/plan-my-study-app-icon-rounded.png") !important;
 }
 
+[data-block-id="d042e21a-0200-4ad1-a1a6-564ee057df87"] span > span,
+[data-block-id="90d7549a-c61b-4dac-8bd9-040b091220e9"] span > span {
+  content: url("https://canopystaticmedia.s3-ap-southeast-2.amazonaws.com/static/branding/plan-my-study-app-icon-rounded.png") !important;
+  height: 40px;
+}
+
 /* Change the branding color on the a tag */
 [data-block-id="d042e21a-0200-4ad1-a1a6-564ee057df87"] a,
 [data-block-id="90d7549a-c61b-4dac-8bd9-040b091220e9"] a {
   color: rgb(25, 118, 210) !important;
+}
+
+/*
+   Footer
+  */
+
+/* 2020 Canopy Study Pty Ltd */
+[data-block-id="b1ad2713-6d21-486f-85bc-2754adc23385"] {
+  text-align: center;
+  font-size: 0.875rem;
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 50em) {
+  /* Position first block in top right of body */
+  [data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] {
+    text-align: right;
+    margin-top: -4.6rem !important;
+    margin-right: -8rem;
+    font-size: 2rem;
+    z-index: 9999;
+  }
+
+  /* Divider in the middle of hero text */
+  [data-block-id="8f67bfcf-7266-45ed-accb-d95e8833299b"] > div {
+    width: 77% !important;
+    margin: auto !important;
+  }
+
+  /* We're addicted to creating amazing... */
+  [data-block-id="d042e21a-0200-4ad1-a1a6-564ee057df87"] {
+    text-align: center;
+    margin-top: 0 !important;
+    font-size: 1.3rem;
+  }
+
+  /* Change social images to correct logos */
+  [data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] a:nth-child(1) img {
+    background: none !important;
+    content: url("https://s3-ap-southeast-2.amazonaws.com/canopystudy.com/img/links/instagram-logo.png") !important;
+  }
+
+  [data-block-id="59106652-c74c-4571-8cce-e93d3716170b"] a:nth-child(2) img {
+    background: none !important;
+    content: url("https://s3-ap-southeast-2.amazonaws.com/canopystudy.com/img/links/facebook-logo.png") !important;
+  }
+
+  /*
+   Footer
+  */
+
+  /* 2020 Canopy Study Pty Ltd */
+  [data-block-id="b1ad2713-6d21-486f-85bc-2754adc23385"] {
+    text-align: right;
+    font-size: 0.875rem;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    padding-right: 50px;
+  }
 }
