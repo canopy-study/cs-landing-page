@@ -47,7 +47,7 @@
 [data-block-id="d042e21a-0200-4ad1-a1a6-564ee057df87"] span > span,
 [data-block-id="90d7549a-c61b-4dac-8bd9-040b091220e9"] span > span {
   content: url("https://canopystaticmedia.s3-ap-southeast-2.amazonaws.com/static/branding/plan-my-study-app-icon-rounded.png") !important;
-  height: 40px;
+  height: 30px;
 }
 
 /* Change the branding color on the a tag */
