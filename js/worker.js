@@ -11,6 +11,7 @@ const SLUG_TO_PAGE = {
   partners: "1f12c4a573274580a291ccd92835787b",
   "the-team": "3ce6451c6fcb45b084f397cc0f830886",
   "contact-us": "e1eabc555532418ca70c661d15defb9f",
+  "starter-pack": "55b2a4703251495591492c1d0ed87228",
 };
 
 const PAGE_TITLE = "Canopy Study";
